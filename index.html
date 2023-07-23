@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2 style="text-align:center;">Book a call</h2> 
+   <p style="text-align:center;">Book a call slot and our representative will call you</p>
+   <hr>
+   <form action="#" onsubmit="registeruser(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value=""><br><br>
+    <label for="eadd">Email:</label>
+    <input type="text" id="eadd" name="eadd" value=""><br><br>
+    <label for="pno">Phone:</label>
+    <input type="text" id="pno" name="pno" value=""><br><br>
+    <label for="doc">Date of call: </label>
+    <input type="date"><br><br>
+    <label for="toc">Time of call:</label>
+    <input type="time"><br><br>
+    <input type="submit" value="Get a call">
+   </form>
+   <script>
+    function registeruser(event){
+        event.preventDefault();
+        const name=document.getElementById('name').value;
+        const eadd=document.getElementById('eadd').value;
+        const pno=document.getElementById('pno').value;
+        console.log(name);
+        console.log(eadd);
+        console.log(pno);
+    }
+   </script>
+   
+</body>
+</html>
